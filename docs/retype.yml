@@ -1,0 +1,11 @@
+input: .
+output: .retype
+url: # Add your website address here
+branding:
+  title: circom-hooks
+  label: Beta
+links:
+- text: Github
+  link: https://github.com/sigmachirality/
+- text: Twitter
+  link: https://twitter.com/danxtao/

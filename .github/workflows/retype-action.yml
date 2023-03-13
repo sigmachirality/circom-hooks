@@ -1,0 +1,28 @@
+name: Publish docs website to GitHub Pages
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    name: Publish to retype branch
+
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: retypeapp/action-build@latest
+        id: retype-build
+        with:
+          config: docs
+
+      - uses: retypeapp/action-github-pages@latest
+        with:
+          update-branch: true
+          branch: retype

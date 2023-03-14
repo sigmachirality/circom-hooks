@@ -15,3 +15,6 @@ Path to the circuit. Resolves relative to the root of the repo or the root passe
 Defaults to circuit name. If present, this label will be used to name generated code instead of the circuit name. For example,
 generating hooks for the Semaphore circuits with the label set to `"Membership"` would generate hooks named `useMembership` instead
 of `useSemaphore`.
+
+### system (optional)
+Defaults to `groth16`. Options include `groth16`, `plonk`, `fflonk`, and `nova` (WIP).

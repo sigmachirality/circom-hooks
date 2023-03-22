@@ -30,7 +30,7 @@ for more info.
 
 +++ npm
 ```shell
-npm run circom-hooks init
+npx circom-hooks init
 ```
 +++ yarn
 ```shell
